@@ -1,5 +1,3 @@
-FROM mysql:latest
+FROM mysql/mysql-server:latest
 
 ADD setup.sql /docker-entrypoint-initdb.d
-
-EXPOSE 3306
